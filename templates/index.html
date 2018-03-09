@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+	<h1>Rock Paper Scissors</h1>
+	<p>Wins: {{0}}</p>
+	<p>Loses: {{0}}</p>
+	<p>Ties: {{0}}</p>
+
+	<form action="/process/rock" method="post">
+		<input type="hidden" name="playerchoice" value="0">
+		<input type="submit" value="Rock">
+	</form>	
+	<form action="/process/paper" method="post">
+		<input type="hidden" name="playerchoice" value="1">
+		<input type="submit" value="Paper">
+	</form>
+	<form action="/process/scissors" method="post">
+		<input type="hidden" name="playerchoice" value="2">
+		<input type="submit" value="Scissors">
+	</form>
+</body>
+</html>
